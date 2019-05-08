@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Powerful Travels</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="HTML Tutorials">
+  <meta name="keywords" content="HTML,JavaScript">
+  <meta name="author" content="Alvaro Olvera">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+  <header id="heading">
+    <span>[Making your Life Easier]</span>
+    <br>
+    <h1>Discovering the World</h1>
+  </header>
+  <div id="add">
+    <button class="fa fa-pencil-alt fa-sm" title="AddPostButton"></button>
+  </div>
+  <div id="filters">
+    <button>All</button>
+    <button>Travel</button>
+    <button>Lifestyle</button>
+    <button>Business</button>
+    <button>Food</button>
+    <button>Work</button>
+  </div>
+  <div id="posts">
+    <div class="img-container" style="width: 50%">
+      <a href="#">
+        <img src="https://static-blog.treebo.com/wp-content/uploads/2017/12/varkala_beach.jpg" alt="The wave are high & beautiful" width="100%">
+        <h3>The waves are high & beautiful</h3>
+        <p><i>3 comments <i class="far fa-comments"></i></i></p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione quia blanditiis sint, ex quo excepturi. Praesentium tempora ipsa accusamus error fuga, officiis omnis repellendus autem possimus, nobis, dolorem quae facilis.</p>
+        <p><b>TRAVEL</b></p>
+      </a>
+      <div class="button-container">
+        <button type="submit" title="Edit" class="fa fa-edit fa-lg"></button>
+        <button type="submit" title="Delete" class="fa fa-trash fa-lg"></button>
+      </div>
+    </div>
+    <div class="img-container" style="width:50%">
+      <a href="#">
+        <img src="https://static-blog.treebo.com/wp-content/uploads/2017/12/puri_beach__odisha-740x449.jpg" alt="At the beach in winter" width="100%">
+        <h3>at the beach in winter</h3>
+        <p><i>2 comments <i class="far fa-comments"></i></i></p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione quia blanditiis sint, ex quo excepturi. Praesentium tempora ipsa accusamus error fuga, officiis omnis repellendus autem possimus, nobis, dolorem quae facilis.</p>
+        <p><b>LIFESTYLE</b></p>
+      </a>
+      <div class="button-container">
+        <button type="submit" title="Edit" class="fa fa-edit fa-lg"></button>
+        <button type="submit" title="Delete" class="fa fa-trash fa-lg"></button>
+      </div>
+    </div>
+    <div class="img-container" style="width: 50%">
+      <a href="#">
+        <img src="https://static-blog.treebo.com/wp-content/uploads/2017/12/kannur_drive_in_beac_JWveZ-740x487.jpg" alt="Great extreme adventure" width="100%">
+        <h3>at the beach in winter</h3>
+        <p><i>2 comments <i class="far fa-comments"></i></i></p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione quia blanditiis sint, ex quo excepturi. Praesentium tempora ipsa accusamus error fuga, officiis omnis repellendus autem possimus, nobis, dolorem quae facilis.</p>
+        <p><b>LIFESTYLE</b></p>
+      </a>
+      <div class="button-container">
+        <button type="submit" title="Edit" class="fa fa-edit fa-lg"></button>
+        <button type="submit" title="Delete" class="fa fa-trash fa-lg"></button>
+      </div>
+    </div>
+    <div class="img-container" style="width: 50%">
+      <a href="#">
+        <img src="http://www.turtleairways.com/wp-content/uploads/2018/09/fiji-vacation-culture.jpg"alt="Great culture festivals" width="100%">
+        <h3>at the beach in winter</h3>
+        <p><i>2 comments <i class="far fa-comments"></i></i></p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione quia blanditiis sint, ex quo excepturi. Praesentium tempora ipsa accusamus error fuga, officiis omnis repellendus autem possimus, nobis, dolorem quae facilis.</p>
+        <p><b>LIFESTYLE</b></p>
+      </a>
+      <div class="button-container">
+        <button type="submit" title="Edit" class="fa fa-edit fa-lg"></button>
+        <button type="submit" title="Delete" class="fa fa-trash fa-lg"></button>
+      </div>
+    </div>
+  </div>
+  <div id="modal" class="modalContainer">
+    <p><strong>Create Post</strong></p>
+    <form id="add_form" action="#" onsubmit="return alert('hola')">
+      <label id="labelPostTitle" for="Title">Title</label>
+      <input type="text" id="Title" title="Write Post Title" aria-labelledby="labelPostTitle" name="Title" placeholder="Title"><br>
+      <label id="labelPostDescription" for="Description">Description</label>
+      <input type="text" id="Description" title="Write Post Description" aria-labelledby="labelPostDescription" name="Description" placeholder="Description"><br>
+      <label id="labelPostType" for="Types">Type</label>
+      <select id="Types" title="Select The Type The Post Would Be" aria-labelledby="labelPostType">
+        <option value="LIFESTYLE" selected>LIFESTYLE</option>
+        <option value="TRAVEL">TRAVEL</option>
+        <option value="BUSINESS">BUSINESS</option>
+        <option value="FOOD">FOOD</option>
+        <option value="WORK">WORK</option>
+      </select><br>
+      <!-- <label>Date</label>
+      <input type="date" name="Date" value="2019-05-08" disabled><br> -->
+      <label id="labelPostImage" for="URLImage">URL of the image</label>
+      <input type="url" id="URLImage" title="Copy the URL Image for the Post" aria-labelledby="labelPostImage" name="imageURL" placeholder="Image URL">
+    </form>
+    <button type="cancel">Cancel</button>
+    <button id="submitButton" type="submit" form="add_form" value="Submit">Submit</button>
+  </div>
+</body>
+
+</html>
