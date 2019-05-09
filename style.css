@@ -1,0 +1,148 @@
+#heading {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-bottom: 0px;
+    border: 0;
+}
+
+#heading > #subtitle {
+    align-self: center;
+    color: #e31c3d;
+    font-size: .8em;
+}
+
+#heading > #subtitle::before {
+    content: "[ ";
+    font-size: 1.5rem;
+}
+
+#heading > #subtitle::after {
+    content: " ]";
+    font-size: 1.5rem;
+}
+
+h1 {
+    margin-top: 0;
+    align-self: center;
+}
+
+#add {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    width: 95%;
+}
+
+#add > button {
+    position: fixed;
+    color: white;
+    background-color: orangered;
+    border: 0;
+    font-size: 1em;
+    padding: 10px 10px 10px 10px;
+    border-radius: 100%;
+}
+
+#filters {
+    display: flex;
+    justify-content: center;
+}
+
+#filters > button {
+    border: 1px solid lightgray;
+    font-size: 1em;
+    background-color: #fff;
+    width: auto;
+    padding: 1em;
+}
+
+#filters > :first-child {
+    border-radius: 10% 0 0 10%;
+}
+
+#filters > :last-child {
+    border-radius: 0 10% 10% 0;
+}
+
+#filters > button:focus{
+    background-color: beige;
+}
+
+#filters > button:hover {
+    background-color: beige;
+}
+
+#posts {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.text-container {
+    color: #fff;
+    text-decoration: none;
+}
+
+.img-container1 {
+    width: 50%;
+    background-image: url("https://static-blog.treebo.com/wp-content/uploads/2017/12/varkala_beach.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.img-container1:hover > .button-container > button {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+}
+
+.img-container2:hover > .button-container > button {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+}
+
+.img-container3:hover > .button-container > button {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+}
+
+.img-container4:hover > .button-container > button {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+}
+
+.img-container2 {
+    width: 50%;
+    background-image: url("https://static-blog.treebo.com/wp-content/uploads/2017/12/puri_beach__odisha-740x449.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.img-container3 {
+    width: 50%;
+    background-image: url("http://www.turtleairways.com/wp-content/uploads/2018/09/fiji-vacation-culture.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.img-container4 {
+    width: 50%;
+    background-image: url("https://static-blog.treebo.com/wp-content/uploads/2017/12/kannur_drive_in_beac_JWveZ-740x487.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+ .button-container > button{
+    display: none;
+}
+
